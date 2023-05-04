@@ -1,0 +1,23 @@
+.divLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.divLogin input{
+    margin-top: 4rem;
+    border: rgb(158,212,252) solid 3px;
+    background-color: transparent;
+    width: 10rem;
+}
+.divLogin input::placeholder{
+    color:black;
+    padding: 0.5rem;
+}
+#buttonLogin{
+    margin: 1rem;
+    background-color: transparent;
+    border: rgb(158,212,252) solid 3px;
+    width: 10.5rem;
+}
