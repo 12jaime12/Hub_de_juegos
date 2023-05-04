@@ -1,17 +1,6 @@
-import { partida } from "./HangmanPartida";
-import { numberRandom } from "./HangmanWord";
-import { palabraRandom } from "./PalabraRandomHangman";
+import { Foto } from "../data/hangman.data";
 import { MainControler } from "./route";
 
-const Foto = [
-  "https://res.cloudinary.com/dtyjzv2xg/image/upload/v1683122726/hagmanMonigote0_xiqwwm.png",
-  "https://res.cloudinary.com/dtyjzv2xg/image/upload/v1683122726/hagmanMonigote1_eiklmu.png",
-  "https://res.cloudinary.com/dtyjzv2xg/image/upload/v1683122726/hagmanMonigote2_a8878g.png",
-  "https://res.cloudinary.com/dtyjzv2xg/image/upload/v1683122726/hagmanMonigote3_fjzhsc.png",
-  "https://res.cloudinary.com/dtyjzv2xg/image/upload/v1683122726/hagmanMonigote4_tyhj1w.png",
-  "https://res.cloudinary.com/dtyjzv2xg/image/upload/v1683122726/hagmanMonigote5_tkwnzq.png",
-  "https://res.cloudinary.com/dtyjzv2xg/image/upload/v1683122727/hagmanMonigote6_e6fqsg.png",
-];
 let i = 0;
 export const HangmanComprobar = (e, palabra) => {
   if (palabra[1].includes(e)) {
@@ -37,7 +26,7 @@ export const HangmanComprobar = (e, palabra) => {
       button.innerHTML = "Play again";
       button.setAttribute("id", "hangmanReset");
       div.append(h1, button);
-      addListener(palabra);
+      addListener();
     }
   } else {
     i++;
@@ -54,20 +43,20 @@ export const HangmanComprobar = (e, palabra) => {
       button.innerHTML = "Play again";
       button.setAttribute("id", "hangmanReset");
       div.append(h1, button);
-      addListener(palabra);
+      addListener();
     }
   }
 };
 
-const addListener = (palabra) => {
+const addListener = () => {
   const reset = document.querySelector("#hangmanReset");
   reset.addEventListener("click", () => {
     i = 0;
-    MainControler("Hangman");
+
     const p = document.querySelectorAll(".hangmanP");
     p.forEach((element) => {
       element.remove();
     });
-    partida(palabra[0]);
+    MainControler("Hangman");
   });
 };

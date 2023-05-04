@@ -15,7 +15,7 @@ const template = () => `
       <img id="hangmanImg" src="https://res.cloudinary.com/dtyjzv2xg/image/upload/v1683122726/hagmanMonigote0_xiqwwm.png"/>
     </section>
     <section id="submit">
-      <input id="hangmanInput" type="text" placeholder="Introduce una letra"/>
+      <input id="hangmanInput" type="textarea" placeholder="Introduce una letra" maxlength="1"/>
       <button id="hangmanComprobar">Comprobar</button>
     </section>
   </div>

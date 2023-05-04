@@ -1,0 +1,224 @@
+#pokemonDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo{
+    margin: 1rem;
+    background: rgb(158,212,252);
+    background: linear-gradient(90deg, rgba(158,212,252,1) 0%, rgba(207,130,247,1) 25%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: none;
+}
+#galleryButton{
+    background-color: transparent;
+    width: 200px;
+    height: 50px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    border: solid 3px rgb(158,212,252);
+    color: rgb(158,212,252);
+}
+#galleryButton:hover{
+    background-color: black;
+}
+#inputPokemon{
+    border: solid 3px rgb(158,212,252);
+    color: rgb(158,212,252);
+    background-color: transparent;
+    width: 200px;
+    height: 50px;
+    margin: 1rem;
+    font-size: 20px;
+}
+#inputPokemon::placeholder{
+    color: rgb(158,212,252);
+    padding: 1rem;
+    font-size: 20px;
+}
+#inputPokemon:hover{
+    background-color: black;
+}
+.pokemonGallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+.pokemonFigure{
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 20px;
+    
+}
+.pokemonFigure img{
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    
+}
+.tipo{
+    display: none;
+}   
+#grass{
+    background-color: 	#78C850;
+    border: 10px solid #4b7e32;
+}
+#fire{
+    background-color: 	#F05030;
+    border: 10px solid #7d2b1a;
+}
+#water{
+    background-color: #3899F8;
+    border: 10px solid #1c4b79;
+}
+#bug{
+    background-color: 	#A8B820;
+    border: 10px solid #545c0f;
+}
+#normal{
+    background-color: #A8A090;
+    border: 10px solid #47443c;
+}
+#poison{
+    background-color: #B058A0;
+    border: 10px solid #51294a;
+}
+#electric{
+    background-color: 	#F8D030;
+    border: 10px solid #6c5b15;
+}
+#ground{
+    background-color: #E9D6A4;
+    border: 10px solid #645c47;
+}
+#fairy{
+    background-color: 	#E79FE7;
+    border: 10px solid #6c4b6c;
+}
+#fighting{
+    background-color: #A05038;
+    border: 10px solid #552b1e;
+}
+#psychic{
+    background-color:#F870A0;
+    border: 10px solid #611f36;
+}
+#rock{
+    background-color: #B8A058;
+    border: 10px solid #594d2a;
+}
+#ghost{
+    background-color: #6060B0;
+    border: 10px solid #2c2c50;
+}
+#ice{
+    background-color: 	#58C8E0;
+    border: 10px solid #2c6370;
+}
+#dragon{
+    background-color: 	#7860E0;
+    border: 10px solid #382c6b;
+}
+/*--------------------------------------------------*/
+.pokemonTipos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 6rem;
+}
+.buttonType{
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 7rem;
+}
+#grassButton{
+    background-color: 	#78C850;
+    border: 3px solid #4b7e32;
+}
+#fireButton{
+    background-color: 	#F05030;
+    border: 3px solid #7d2b1a;
+    
+}
+#waterButton{
+    background-color: #3899F8;
+    border: 3px solid #1c4b79;
+    
+}
+#bugButton{
+    background-color: 	#A8B820;
+    border: 3px solid #545c0f;
+   
+}
+#normalButton{
+    background-color: #A8A090;
+    border: 3px solid #47443c;
+   
+}
+#poisonButton{
+    background-color: #B058A0;
+    border: 3px solid #51294a;
+    
+}
+#electricButton{
+    background-color: 	#F8D030;
+    border: 3px solid #6c5b15;
+   
+}
+#groundButton{
+    background-color: #E9D6A4;
+    border: 3px solid #645c47;
+    
+}
+#fairyButton{
+    background-color: 	#E79FE7;
+    border: 3px solid #6c4b6c;
+   
+}
+#fightingButton{
+    background-color: #A05038;
+    border: 3px solid #552b1e;
+   
+}
+#psychicButton{
+    background-color:#F870A0;
+    border: 3px solid #611f36;
+    
+}
+#rockButton{
+    background-color: #B8A058;
+    border: 3px solid #594d2a;
+    
+}
+#ghostButton{
+    background-color: #6060B0;
+    border: 3px solid #2c2c50;
+   
+}
+#iceButton{
+    background-color: 	#58C8E0;
+    border: 3px solid #2c6370;
+   
+}
+#dragonButton{
+    background-color: 	#7860E0;
+    border: 3px solid #382c6b;
+ 
+}
