@@ -1,5 +1,5 @@
-import { Foto } from "../data/hangman.data";
-import { MainControler } from "./route";
+import { Foto } from "../../../data/hangman.data";
+import { MainControler } from "../../../utils/route";
 
 let i = 0;
 export const HangmanComprobar = (e, palabra) => {
