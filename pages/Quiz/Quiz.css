@@ -1,0 +1,118 @@
+.quizDiv1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.quizDiv2{
+    margin: 5rem;
+    min-width: 80vw;
+    min-height: 70vh;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.tituloQuiz{
+    margin: 1rem 1rem;
+}
+.pregunta{
+    margin: 0.5vh 5vw;
+    min-height: 5vh;
+    min-width: 70vw;
+    background-color: rgb(158,212,252);
+    border-radius: 20px;
+    border: 2px solid rgb(77, 102, 122);
+}
+.respuestas{
+    margin: 4rem 0rem;
+}
+.respuesta{
+    margin: 1vh 5vw;
+    min-height: 10vh;
+    min-width: 70vw;
+    background-color: rgb(158,212,252);
+    border-radius: 20px;
+    border: 2px solid rgb(77, 102, 122);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.acierto{
+    margin: 1vh 5vw;
+    min-height: 10vh;
+    min-width: 70vw;
+    background-color: greenyellow;
+    border-radius: 20px;
+    border: 2px solid rgb(77, 102, 122);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.fallo{
+    margin: 1vh 5vw;
+    min-height: 10vh;
+    min-width: 70vw;
+    background-color: red;
+    border-radius: 20px;
+    border: 2px solid rgb(77, 102, 122);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.PuntuacionAciertos{
+    margin: 1vh 5vw;
+    min-height: 10vh;
+    min-width: 70vw;
+    background-color: greenyellow;
+    border-radius: 20px;
+    border: 2px solid rgb(77, 102, 122);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.PuntuacionFallos{
+    margin: 1vh 5vw;
+    min-height: 10vh;
+    min-width: 70vw;
+    background-color: red;
+    border-radius: 20px;
+    border: 2px solid rgb(77, 102, 122);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.reiniciar{
+    min-width: 70vw;
+    margin: 1vh 5vw;
+    background-color: transparent;
+    border: 3px rgb(158,212,252) solid;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.buttonsQuiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.buttonOption{
+    min-width: 70vw;
+    margin: 1vh 5vw;
+    background-color: transparent;
+    border: 3px rgb(158,212,252) solid;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.buttonOption:hover,.reiniciar:hover{
+    background-color: black;
+    color: white;
+}
