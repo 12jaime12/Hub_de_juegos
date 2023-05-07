@@ -45,7 +45,7 @@
     margin: 1vh 5vw;
     min-height: 10vh;
     min-width: 70vw;
-    background-color: greenyellow;
+    background-color: green;
     border-radius: 20px;
     border: 2px solid rgb(77, 102, 122);
     display: flex;
@@ -69,7 +69,7 @@
     margin: 1vh 5vw;
     min-height: 10vh;
     min-width: 70vw;
-    background-color: greenyellow;
+    background-color: green;
     border-radius: 20px;
     border: 2px solid rgb(77, 102, 122);
     display: flex;

@@ -55,19 +55,23 @@ const addListeners = (preguntaAzar) => {
     if (res0.innerHTML === preguntaAzar.acierto) {
       res0.setAttribute("class", "acierto");
       aciertos++;
-      const divPregunta = document.querySelector(".preguntas");
-      divPregunta.innerHTML = "";
-      const divRespuestas = document.querySelector(".respuestas");
-      divRespuestas.innerHTML = "";
-      pintarPregunta();
+      setTimeout(() => {
+        const divPregunta = document.querySelector(".preguntas");
+        divPregunta.innerHTML = "";
+        const divRespuestas = document.querySelector(".respuestas");
+        divRespuestas.innerHTML = "";
+        pintarPregunta();
+      }, 1000);
     } else {
       res0.setAttribute("class", "fallo");
       fallos++;
-      const divPregunta = document.querySelector(".preguntas");
-      divPregunta.innerHTML = "";
-      const divRespuestas = document.querySelector(".respuestas");
-      divRespuestas.innerHTML = "";
-      pintarPregunta();
+      setTimeout(() => {
+        const divPregunta = document.querySelector(".preguntas");
+        divPregunta.innerHTML = "";
+        const divRespuestas = document.querySelector(".respuestas");
+        divRespuestas.innerHTML = "";
+        pintarPregunta();
+      }, 1000);
     }
   });
   const res1 = document.querySelector("#respuesta1");
@@ -75,19 +79,23 @@ const addListeners = (preguntaAzar) => {
     if (res1.innerHTML === preguntaAzar.acierto) {
       res1.setAttribute("class", "acierto");
       aciertos++;
-      const divPregunta = document.querySelector(".preguntas");
-      divPregunta.innerHTML = "";
-      const divRespuestas = document.querySelector(".respuestas");
-      divRespuestas.innerHTML = "";
-      pintarPregunta();
+      setTimeout(() => {
+        const divPregunta = document.querySelector(".preguntas");
+        divPregunta.innerHTML = "";
+        const divRespuestas = document.querySelector(".respuestas");
+        divRespuestas.innerHTML = "";
+        pintarPregunta();
+      }, 1000);
     } else {
       res1.setAttribute("class", "fallo");
       fallos++;
-      const divPregunta = document.querySelector(".preguntas");
-      divPregunta.innerHTML = "";
-      const divRespuestas = document.querySelector(".respuestas");
-      divRespuestas.innerHTML = "";
-      pintarPregunta();
+      setTimeout(() => {
+        const divPregunta = document.querySelector(".preguntas");
+        divPregunta.innerHTML = "";
+        const divRespuestas = document.querySelector(".respuestas");
+        divRespuestas.innerHTML = "";
+        pintarPregunta();
+      }, 1000);
     }
   });
   const res2 = document.querySelector("#respuesta2");
@@ -95,19 +103,23 @@ const addListeners = (preguntaAzar) => {
     if (res2.innerHTML === preguntaAzar.acierto) {
       res2.setAttribute("class", "acierto");
       aciertos++;
-      const divPregunta = document.querySelector(".preguntas");
-      divPregunta.innerHTML = "";
-      const divRespuestas = document.querySelector(".respuestas");
-      divRespuestas.innerHTML = "";
-      pintarPregunta();
+      setTimeout(() => {
+        const divPregunta = document.querySelector(".preguntas");
+        divPregunta.innerHTML = "";
+        const divRespuestas = document.querySelector(".respuestas");
+        divRespuestas.innerHTML = "";
+        pintarPregunta();
+      }, 1000);
     } else {
       res2.setAttribute("class", "fallo");
       fallos++;
-      const divPregunta = document.querySelector(".preguntas");
-      divPregunta.innerHTML = "";
-      const divRespuestas = document.querySelector(".respuestas");
-      divRespuestas.innerHTML = "";
-      pintarPregunta();
+      setTimeout(() => {
+        const divPregunta = document.querySelector(".preguntas");
+        divPregunta.innerHTML = "";
+        const divRespuestas = document.querySelector(".respuestas");
+        divRespuestas.innerHTML = "";
+        pintarPregunta();
+      }, 1000);
     }
   });
   const res3 = document.querySelector("#respuesta3");
@@ -115,19 +127,23 @@ const addListeners = (preguntaAzar) => {
     if (res3.innerHTML === preguntaAzar.acierto) {
       res3.setAttribute("class", "acierto");
       aciertos++;
-      const divPregunta = document.querySelector(".preguntas");
-      divPregunta.innerHTML = "";
-      const divRespuestas = document.querySelector(".respuestas");
-      divRespuestas.innerHTML = "";
-      pintarPregunta();
+      setTimeout(() => {
+        const divPregunta = document.querySelector(".preguntas");
+        divPregunta.innerHTML = "";
+        const divRespuestas = document.querySelector(".respuestas");
+        divRespuestas.innerHTML = "";
+        pintarPregunta();
+      }, 1000);
     } else {
       res3.setAttribute("class", "fallo");
       fallos++;
-      const divPregunta = document.querySelector(".preguntas");
-      divPregunta.innerHTML = "";
-      const divRespuestas = document.querySelector(".respuestas");
-      divRespuestas.innerHTML = "";
-      pintarPregunta();
+      setTimeout(() => {
+        const divPregunta = document.querySelector(".preguntas");
+        divPregunta.innerHTML = "";
+        const divRespuestas = document.querySelector(".respuestas");
+        divRespuestas.innerHTML = "";
+        pintarPregunta();
+      }, 1000);
     }
   });
 };
