@@ -1,0 +1,50 @@
+.rayaDiv1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.rayaDiv2{
+    margin: 5rem 0;
+    min-width: 70vw;
+    min-height: 70vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+.Cuadricula{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem;
+}
+.cuadro{
+    border: 1px solid black;
+    list-style: none;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 250px;
+}
+.cuadroLleno{
+    border: 1px solid black;
+    list-style: none;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 250px;
+}

@@ -35,7 +35,6 @@ const addListeners = (palabra) => {
 export const printTemplate = () => {
   document.querySelector("main").innerHTML = template();
   let palabra = palabraRandom();
-  console.log("hagnman", palabra[1]);
   partida(palabra[0]);
   addListeners(palabra);
 };

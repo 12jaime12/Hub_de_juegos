@@ -4,10 +4,8 @@ import { MainControler } from "../route";
 let i = 0;
 export const HangmanComprobar = (e, palabra) => {
   if (palabra[1].includes(e)) {
-    palabra[0].forEach((element, index) => {
-      console.log(e);
+    palabra[0].forEach((element) => {
       if (e === element) {
-        console.log("entro", index);
         const p = document.getElementById(`${e}`);
         p.innerHTML = e.toUpperCase();
         p.setAttribute("id", "hola");

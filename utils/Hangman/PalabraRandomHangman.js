@@ -1,4 +1,4 @@
-import { numberRandom } from "./HangmanWord";
+import { numberRandom } from "../numeroAleatorio";
 
 const Palabras = ["hola", "perro", "gato", "messi", "casa", "conejo"];
 

@@ -1,12 +1,13 @@
 import { MainControler } from "../route";
-import { preguntaRandom } from "./PreguntaRandom";
+import { numberRandom } from "../numeroAleatorio";
+import { clean } from "./limpiar";
 let aciertos = 0;
 let fallos = 0;
 export const pintarPregunta = (array) => {
   if (array.length !== 0) {
     const divButtons = document.querySelector(".buttonsQuiz");
     divButtons.innerHTML = "";
-    const numeroPregunta = preguntaRandom(array);
+    const numeroPregunta = numberRandom(array);
     const preguntaAzar = array[numeroPregunta];
     const titulo = document.createElement("h2");
     titulo.innerHTML = preguntaAzar.pregunta;
@@ -26,10 +27,7 @@ export const pintarPregunta = (array) => {
   } else {
     const divButtons = document.querySelector(".buttonsQuiz");
     divButtons.innerHTML = "";
-    const divPregunta = document.querySelector(".preguntas");
-    divPregunta.innerHTML = "";
-    const divRespuestas = document.querySelector(".respuestas");
-    divRespuestas.innerHTML = "";
+    clean();
     const h2Aciertos = document.createElement("h2");
     h2Aciertos.setAttribute("class", "PuntuacionAciertos");
     h2Aciertos.innerHTML = `Preguntas acertadas: ${aciertos}`;
@@ -52,20 +50,14 @@ const addListeners = (preguntaAzar, array) => {
       res0.setAttribute("class", "acierto");
       aciertos++;
       setTimeout(() => {
-        const divPregunta = document.querySelector(".preguntas");
-        divPregunta.innerHTML = "";
-        const divRespuestas = document.querySelector(".respuestas");
-        divRespuestas.innerHTML = "";
+        clean();
         pintarPregunta(array);
       }, 1000);
     } else {
       res0.setAttribute("class", "fallo");
       fallos++;
       setTimeout(() => {
-        const divPregunta = document.querySelector(".preguntas");
-        divPregunta.innerHTML = "";
-        const divRespuestas = document.querySelector(".respuestas");
-        divRespuestas.innerHTML = "";
+        clean();
         pintarPregunta(array);
       }, 1000);
     }
@@ -76,20 +68,14 @@ const addListeners = (preguntaAzar, array) => {
       res1.setAttribute("class", "acierto");
       aciertos++;
       setTimeout(() => {
-        const divPregunta = document.querySelector(".preguntas");
-        divPregunta.innerHTML = "";
-        const divRespuestas = document.querySelector(".respuestas");
-        divRespuestas.innerHTML = "";
+        clean();
         pintarPregunta(array);
       }, 1000);
     } else {
       res1.setAttribute("class", "fallo");
       fallos++;
       setTimeout(() => {
-        const divPregunta = document.querySelector(".preguntas");
-        divPregunta.innerHTML = "";
-        const divRespuestas = document.querySelector(".respuestas");
-        divRespuestas.innerHTML = "";
+        clean();
         pintarPregunta(array);
       }, 1000);
     }
@@ -100,20 +86,14 @@ const addListeners = (preguntaAzar, array) => {
       res2.setAttribute("class", "acierto");
       aciertos++;
       setTimeout(() => {
-        const divPregunta = document.querySelector(".preguntas");
-        divPregunta.innerHTML = "";
-        const divRespuestas = document.querySelector(".respuestas");
-        divRespuestas.innerHTML = "";
+        clean();
         pintarPregunta(array);
       }, 1000);
     } else {
       res2.setAttribute("class", "fallo");
       fallos++;
       setTimeout(() => {
-        const divPregunta = document.querySelector(".preguntas");
-        divPregunta.innerHTML = "";
-        const divRespuestas = document.querySelector(".respuestas");
-        divRespuestas.innerHTML = "";
+        clean();
         pintarPregunta(array);
       }, 1000);
     }
@@ -124,20 +104,14 @@ const addListeners = (preguntaAzar, array) => {
       res3.setAttribute("class", "acierto");
       aciertos++;
       setTimeout(() => {
-        const divPregunta = document.querySelector(".preguntas");
-        divPregunta.innerHTML = "";
-        const divRespuestas = document.querySelector(".respuestas");
-        divRespuestas.innerHTML = "";
+        clean();
         pintarPregunta(array);
       }, 1000);
     } else {
       res3.setAttribute("class", "fallo");
       fallos++;
       setTimeout(() => {
-        const divPregunta = document.querySelector(".preguntas");
-        divPregunta.innerHTML = "";
-        const divRespuestas = document.querySelector(".respuestas");
-        divRespuestas.innerHTML = "";
+        clean();
         pintarPregunta(array);
       }, 1000);
     }
