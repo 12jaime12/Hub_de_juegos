@@ -1,6 +1,6 @@
-import { HangmanComprobar } from "./utils/HangmanComprobar";
-import { partida } from "./utils/HangmanPartida";
-import { palabraRandom } from "./utils/PalabraRandomHangman";
+import { HangmanComprobar } from "../../utils/Hangman/HangmanComprobar";
+import { partida } from "../../utils/Hangman/HangmanPartida";
+import { palabraRandom } from "../../utils/Hangman/PalabraRandomHangman";
 import "./Hangman.css";
 
 // -----> 1) Funcion de template

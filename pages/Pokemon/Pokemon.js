@@ -1,7 +1,10 @@
-import { filterPokemon } from "./utils/filterPokemon";
+import { filterPokemon } from "../../utils/Pokemon/filterPokemon";
 import "./Pokemon.css";
-import { dataService, pokemonDataGlobal } from "./utils/PokemonDataService";
-import { montarCarta } from "./utils/montarCarta";
+import {
+  dataService,
+  pokemonDataGlobal,
+} from "../../utils/Pokemon/PokemonDataService";
+import { montarCarta } from "../../utils/Pokemon/montarCarta";
 
 const template = () => `
 <div id=pokemonDiv>

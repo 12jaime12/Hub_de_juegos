@@ -1,5 +1,5 @@
-import { Foto } from "../../../data/hangman.data";
-import { MainControler } from "../../../utils/route";
+import { Foto } from "../../data/hangman.data";
+import { MainControler } from "../route";
 
 let i = 0;
 export const HangmanComprobar = (e, palabra) => {
@@ -18,15 +18,17 @@ export const HangmanComprobar = (e, palabra) => {
     });
     const pElement = document.querySelectorAll(".hangmanPacertado");
     if (pElement.length === palabra[0].length) {
-      const div = document.querySelector("#hangmanDiv2");
-      div.innerHTML = "";
-      const h1 = document.createElement("h1");
-      h1.innerHTML = "Has ganado";
-      const button = document.createElement("button");
-      button.innerHTML = "Play again";
-      button.setAttribute("id", "hangmanReset");
-      div.append(h1, button);
-      addListener();
+      setTimeout(() => {
+        const div = document.querySelector("#hangmanDiv2");
+        div.innerHTML = "";
+        const h1 = document.createElement("h1");
+        h1.innerHTML = "Has ganado";
+        const button = document.createElement("button");
+        button.innerHTML = "Play again";
+        button.setAttribute("id", "hangmanReset");
+        div.append(h1, button);
+        addListener();
+      }, 500);
     }
   } else {
     i++;
@@ -35,15 +37,17 @@ export const HangmanComprobar = (e, palabra) => {
     const input = document.querySelector("#hangmanInput");
     input.value = "";
     if (i === 6) {
-      const div = document.querySelector("#hangmanDiv2");
-      div.innerHTML = "";
-      const h1 = document.createElement("h1");
-      h1.innerHTML = "Has perdido la partida";
-      const button = document.createElement("button");
-      button.innerHTML = "Play again";
-      button.setAttribute("id", "hangmanReset");
-      div.append(h1, button);
-      addListener();
+      setTimeout(() => {
+        const div = document.querySelector("#hangmanDiv2");
+        div.innerHTML = "";
+        const h1 = document.createElement("h1");
+        h1.innerHTML = "Has perdido la partida";
+        const button = document.createElement("button");
+        button.innerHTML = "Play again";
+        button.setAttribute("id", "hangmanReset");
+        div.append(h1, button);
+        addListener();
+      }, 500);
     }
   }
 };

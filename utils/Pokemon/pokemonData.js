@@ -1,4 +1,4 @@
-import { getPokemon } from "../../../services/pokemon.service";
+import { getPokemon } from "../../services/pokemon.service";
 
 export const pokemonData = async () => {
   const data = [];

@@ -1,16 +1,13 @@
-import { preguntas } from "../../data/quiz.data";
 import { MainControler } from "../route";
 import { preguntaRandom } from "./PreguntaRandom";
 let aciertos = 0;
 let fallos = 0;
-let arrayAux = [...preguntas];
-export const pintarPregunta = () => {
-  if (arrayAux.length !== 0) {
+export const pintarPregunta = (array) => {
+  if (array.length !== 0) {
     const divButtons = document.querySelector(".buttonsQuiz");
     divButtons.innerHTML = "";
-    const numeroPregunta = preguntaRandom(arrayAux);
-    const preguntaAzar = arrayAux[numeroPregunta];
-    console.log(preguntaAzar);
+    const numeroPregunta = preguntaRandom(array);
+    const preguntaAzar = array[numeroPregunta];
     const titulo = document.createElement("h2");
     titulo.innerHTML = preguntaAzar.pregunta;
     titulo.setAttribute("class", "pregunta");
@@ -24,9 +21,8 @@ export const pintarPregunta = () => {
       const divRespuestas = document.querySelector(".respuestas");
       divRespuestas.appendChild(p);
     });
-    arrayAux.splice(numeroPregunta, 1);
-    console.log(arrayAux);
-    addListeners(preguntaAzar);
+    array.splice(numeroPregunta, 1);
+    addListeners(preguntaAzar, array);
   } else {
     const divButtons = document.querySelector(".buttonsQuiz");
     divButtons.innerHTML = "";
@@ -49,7 +45,7 @@ export const pintarPregunta = () => {
   }
 };
 
-const addListeners = (preguntaAzar) => {
+const addListeners = (preguntaAzar, array) => {
   const res0 = document.querySelector("#respuesta0");
   res0.addEventListener("click", () => {
     if (res0.innerHTML === preguntaAzar.acierto) {
@@ -60,7 +56,7 @@ const addListeners = (preguntaAzar) => {
         divPregunta.innerHTML = "";
         const divRespuestas = document.querySelector(".respuestas");
         divRespuestas.innerHTML = "";
-        pintarPregunta();
+        pintarPregunta(array);
       }, 1000);
     } else {
       res0.setAttribute("class", "fallo");
@@ -70,7 +66,7 @@ const addListeners = (preguntaAzar) => {
         divPregunta.innerHTML = "";
         const divRespuestas = document.querySelector(".respuestas");
         divRespuestas.innerHTML = "";
-        pintarPregunta();
+        pintarPregunta(array);
       }, 1000);
     }
   });
@@ -84,7 +80,7 @@ const addListeners = (preguntaAzar) => {
         divPregunta.innerHTML = "";
         const divRespuestas = document.querySelector(".respuestas");
         divRespuestas.innerHTML = "";
-        pintarPregunta();
+        pintarPregunta(array);
       }, 1000);
     } else {
       res1.setAttribute("class", "fallo");
@@ -94,7 +90,7 @@ const addListeners = (preguntaAzar) => {
         divPregunta.innerHTML = "";
         const divRespuestas = document.querySelector(".respuestas");
         divRespuestas.innerHTML = "";
-        pintarPregunta();
+        pintarPregunta(array);
       }, 1000);
     }
   });
@@ -108,7 +104,7 @@ const addListeners = (preguntaAzar) => {
         divPregunta.innerHTML = "";
         const divRespuestas = document.querySelector(".respuestas");
         divRespuestas.innerHTML = "";
-        pintarPregunta();
+        pintarPregunta(array);
       }, 1000);
     } else {
       res2.setAttribute("class", "fallo");
@@ -118,7 +114,7 @@ const addListeners = (preguntaAzar) => {
         divPregunta.innerHTML = "";
         const divRespuestas = document.querySelector(".respuestas");
         divRespuestas.innerHTML = "";
-        pintarPregunta();
+        pintarPregunta(array);
       }, 1000);
     }
   });
@@ -132,7 +128,7 @@ const addListeners = (preguntaAzar) => {
         divPregunta.innerHTML = "";
         const divRespuestas = document.querySelector(".respuestas");
         divRespuestas.innerHTML = "";
-        pintarPregunta();
+        pintarPregunta(array);
       }, 1000);
     } else {
       res3.setAttribute("class", "fallo");
@@ -142,7 +138,7 @@ const addListeners = (preguntaAzar) => {
         divPregunta.innerHTML = "";
         const divRespuestas = document.querySelector(".respuestas");
         divRespuestas.innerHTML = "";
-        pintarPregunta();
+        pintarPregunta(array);
       }, 1000);
     }
   });
@@ -153,7 +149,6 @@ const addListeners2 = () => {
   button.addEventListener("click", () => {
     aciertos = 0;
     fallos = 0;
-    arrayAux = [...preguntas];
     MainControler("Quiz");
   });
 };

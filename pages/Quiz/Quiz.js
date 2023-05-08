@@ -1,5 +1,4 @@
-import { preguntas } from "../../data/quiz.data";
-import { pintarPregunta } from "../../utils/Quiz/PintarPregunta";
+import { copiaArray } from "../../utils/Quiz/copiaArray";
 import "./Quiz.css";
 
 // -----> 1) Funcion de template
@@ -25,7 +24,19 @@ const template = () => `
 const addListeners = () => {
   const capitales = document.querySelector("#capitales");
   capitales.addEventListener("click", () => {
-    pintarPregunta();
+    copiaArray("capitales");
+  });
+  const formula1 = document.querySelector("#formula1");
+  formula1.addEventListener("click", () => {
+    copiaArray("formula1");
+  });
+  const futbol = document.querySelector("#futbol");
+  futbol.addEventListener("click", () => {
+    copiaArray("futbol");
+  });
+  const programacion = document.querySelector("#programacion");
+  programacion.addEventListener("click", () => {
+    copiaArray("programacion");
   });
 };
 
