@@ -39,83 +39,43 @@ export const pintarPregunta = (array) => {
     button.innerHTML = "Play again";
     const div = document.querySelector(".quizDiv2");
     div.append(h2Aciertos, h2Fallos, button);
+    if (aciertos >= 5) {
+      const confeti = new JSConfetti();
+      confeti.addConfetti();
+    } else {
+      const confeti = new JSConfetti();
+      confeti.addConfetti({
+        emojis: ["😭"],
+      });
+    }
     addListeners2();
   }
 };
 
 const addListeners = (preguntaAzar, array) => {
-  const res0 = document.querySelector("#respuesta0");
-  res0.addEventListener("click", () => {
-    if (res0.innerHTML === preguntaAzar.acierto) {
-      res0.setAttribute("class", "acierto");
-      aciertos++;
-      setTimeout(() => {
-        clean();
-        pintarPregunta(array);
-      }, 1000);
-    } else {
-      res0.setAttribute("class", "fallo");
-      fallos++;
-      setTimeout(() => {
-        clean();
-        pintarPregunta(array);
-      }, 1000);
-    }
-  });
-  const res1 = document.querySelector("#respuesta1");
-  res1.addEventListener("click", () => {
-    if (res1.innerHTML === preguntaAzar.acierto) {
-      res1.setAttribute("class", "acierto");
-      aciertos++;
-      setTimeout(() => {
-        clean();
-        pintarPregunta(array);
-      }, 1000);
-    } else {
-      res1.setAttribute("class", "fallo");
-      fallos++;
-      setTimeout(() => {
-        clean();
-        pintarPregunta(array);
-      }, 1000);
-    }
-  });
-  const res2 = document.querySelector("#respuesta2");
-  res2.addEventListener("click", () => {
-    if (res2.innerHTML === preguntaAzar.acierto) {
-      res2.setAttribute("class", "acierto");
-      aciertos++;
-      setTimeout(() => {
-        clean();
-        pintarPregunta(array);
-      }, 1000);
-    } else {
-      res2.setAttribute("class", "fallo");
-      fallos++;
-      setTimeout(() => {
-        clean();
-        pintarPregunta(array);
-      }, 1000);
-    }
-  });
-  const res3 = document.querySelector("#respuesta3");
-  res3.addEventListener("click", () => {
-    if (res3.innerHTML === preguntaAzar.acierto) {
-      res3.setAttribute("class", "acierto");
-      aciertos++;
-      setTimeout(() => {
-        clean();
-        pintarPregunta(array);
-      }, 1000);
-    } else {
-      res3.setAttribute("class", "fallo");
-      fallos++;
-      setTimeout(() => {
-        clean();
-        pintarPregunta(array);
-      }, 1000);
-    }
-  });
+  const numberAnswers = preguntaAzar.respuestas.length;
+  console.log(numberAnswers);
+  for (let index = 0; index < numberAnswers; index++) {
+    const idCustom = `#respuesta${index}`;
+    const res = document.querySelector(idCustom);
+    res.addEventListener("click", () => {
+      if (res.innerHTML === preguntaAzar.acierto) {
+        res.setAttribute("class", "acierto");
+        aciertos++;
+        setTimeout(() => {
+          clean();
+          pintarPregunta(array);
+        }, 1000);
+      } else {
+        res.setAttribute("class", "fallo");
+        fallos++;
+        setTimeout(() => {
+          clean();
+          pintarPregunta(array);
+        }, 1000);
+      }
+    });
+  }
 };
 
 const addListeners2 = () => {

@@ -24,6 +24,8 @@ export const HangmanComprobar = (e, palabra) => {
         const button = document.createElement("button");
         button.innerHTML = "Play again";
         button.setAttribute("id", "hangmanReset");
+        const confeti = new JSConfetti();
+        confeti.addConfetti();
         div.append(h1, button);
         addListener();
       }, 500);
@@ -44,6 +46,10 @@ export const HangmanComprobar = (e, palabra) => {
         button.innerHTML = "Play again";
         button.setAttribute("id", "hangmanReset");
         div.append(h1, button);
+        const confeti = new JSConfetti();
+        confeti.addConfetti({
+          emojis: ["😭"],
+        });
         addListener();
       }, 500);
     }

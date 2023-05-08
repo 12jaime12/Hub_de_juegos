@@ -1,0 +1,34 @@
+export const Pecados = [
+  [
+    "https://res.cloudinary.com/dtyjzv2xg/image/upload/v1683556956/Escanor_Anime_n0pbhb.webp",
+    "1",
+  ],
+  [
+    "https://res.cloudinary.com/dtyjzv2xg/image/upload/v1683556971/pngwing.com_4_hptgse.png",
+    "2",
+  ],
+  [
+    "https://res.cloudinary.com/dtyjzv2xg/image/upload/v1683556971/pngwing.com_2_lytgbx.png",
+    "3",
+  ],
+  [
+    "https://res.cloudinary.com/dtyjzv2xg/image/upload/v1683556971/pngwing.com_7_aya2ej.png",
+    "4",
+  ],
+  [
+    "https://res.cloudinary.com/dtyjzv2xg/image/upload/v1683556971/pngwing.com_6_n9vdid.png",
+    "5",
+  ],
+  [
+    "https://res.cloudinary.com/dtyjzv2xg/image/upload/v1683556971/pngwing.com_1_condel.png",
+    "6",
+  ],
+  [
+    "https://res.cloudinary.com/dtyjzv2xg/image/upload/v1683556972/pngwing.com_3_gxuyjq.png",
+    "7",
+  ],
+  [
+    "https://res.cloudinary.com/dtyjzv2xg/image/upload/v1683556972/pngwing.com_5_rwkowz.png",
+    "8",
+  ],
+];
