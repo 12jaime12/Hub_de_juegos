@@ -54,7 +54,6 @@ export const pintarPregunta = (array) => {
 
 const addListeners = (preguntaAzar, array) => {
   const numberAnswers = preguntaAzar.respuestas.length;
-  console.log(numberAnswers);
   for (let index = 0; index < numberAnswers; index++) {
     const idCustom = `#respuesta${index}`;
     const res = document.querySelector(idCustom);

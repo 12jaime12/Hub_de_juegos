@@ -37,9 +37,61 @@
     text-align: center;
     background-color: gray;
     border-radius: 20px;
+    position: relative;
+    transform-style:flat;
 }
-.personaje{
+.memoryLiRotate{
+    width: 200px;
+    height: 200px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: gray;
+    border-radius: 20px;
+    position: relative;
+    transform-style:flat;
+}
+.acertados{
+    width: 200px;
+    height: 200px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: gray;
+    border-radius: 20px;
+    position: relative;
+    transform-style:flat;
+}
+.back,.front{
     height: 90%;
     width: 90%;
     object-fit: contain;
+    position: absolute;
+    top: 0;
+    backface-visibility: hidden;
+}
+.front{
+    transform: rotateY(0deg);
+    z-index: 2;
+    transition: all 0.5s linear;
+}
+.back{
+    transform: rotateY(180deg);
+    transition: all 0.5s linear;
+}
+.rotateFront{
+    transform: rotateY(180deg);
+}
+.rotateBack{
+    transform: rotateY(360deg);
+}
+.rotadaFront{
+    transform: rotateY(180deg);
+}
+.rotadaBack{
+    transform: rotateY(360deg);
 }

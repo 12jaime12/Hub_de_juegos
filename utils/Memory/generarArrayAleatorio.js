@@ -10,6 +10,5 @@ export const arrayAleatorio = (array1) => {
     arrayAux.push(pos1);
     array1.splice(index1, 1);
   }
-  console.log(arrayAux);
   pintarCartasMemory(arrayAux);
 };
