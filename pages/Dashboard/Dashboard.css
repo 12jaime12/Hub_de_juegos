@@ -21,7 +21,7 @@ main{
 .figureDashboard{
     width: 300px;
     height: 300px;
-    margin: 3rem 0; 
+    margin: 6rem; 
 }
 
 .figureDashboard img{
@@ -39,4 +39,13 @@ box-shadow: 0px 0px 22px 10px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 22px 10px rgba(227,132,252,1);
 box-shadow: 0px 0px 22px 10px rgba(227,132,252,1);
 
+}
+@media screen and ( max-width: 550px){
+    .figureDashboard{
+        
+        margin: 3rem 0; 
+    }
+    .DashboardContainer ul{
+        padding-top: 6vh;
+    }
 }
