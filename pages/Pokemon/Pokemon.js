@@ -13,6 +13,7 @@ const template = () => `
   <input type="text" id="inputPokemon" placeholder="ej: pikachu"/>
   <h2 class="titulo">Busqueda por tipo</h2>
   <div class="pokemonTipos"></div>
+  <div class="pokemonSelect"></div>
   <div class="pokemonGallery"></div>
 </div>
 `;
