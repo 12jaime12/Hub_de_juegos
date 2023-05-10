@@ -3,7 +3,7 @@ import { playTopo } from "../../utils/Topo/playTopo";
 import { scoreMarcador } from "../../utils/Topo/score";
 
 import "./Topo.css";
-let score = 0;
+//let score = 0;
 // -----> 1) Funcion de template
 
 const template = () => `

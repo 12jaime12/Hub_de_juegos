@@ -1,19 +1,31 @@
 import { MainControler } from "../route";
-import { score } from "./score";
+import { getScore, setScore } from "./score";
 import { showTopo } from "./showTopo";
 export let timeUp = false;
 
 export const playTopo = () => {
+  timeUp = false;
   showTopo(timeUp);
   const button = document.querySelector("#startGame");
   button.innerHTML = "";
 
   setTimeout(() => {
+    const actualScore = getScore();
     timeUp = true;
     const div = document.querySelector(".topoDiv2");
     div.innerHTML = "";
     const h1 = document.createElement("h1");
-    h1.innerHTML = `Has conseguido una puntuacion de ${score}`;
+    if (actualScore >= 15) {
+      h1.innerHTML = `Enhorabuena has conseguido una puntuacion de ${actualScore} puntos`;
+      const confeti = new JSConfetti();
+      confeti.addConfetti();
+    } else {
+      h1.innerHTML = `Intentelo de nuevohas conseguido una puntuacion de ${actualScore} puntos`;
+      const confeti = new JSConfetti();
+      confeti.addConfetti({
+        emojis: ["😭"],
+      });
+    }
     const button = document.createElement("button");
     button.setAttribute("class", "resetTopo");
     button.innerHTML = "Play Again";
@@ -25,6 +37,7 @@ export const playTopo = () => {
 const addListeners = () => {
   const button = document.querySelector(".resetTopo");
   button.addEventListener("click", () => {
+    setScore(0);
     MainControler("Topo");
   });
 };

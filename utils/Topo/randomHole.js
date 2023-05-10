@@ -6,7 +6,7 @@ export const randomHole = () => {
   const holeRandom = hole[index];
 
   if (holeRandom === lastHole) {
-    return randomHole(document.querySelectorAll(".hole"));
+    return randomHole();
   }
   lastHole = holeRandom;
   return holeRandom;

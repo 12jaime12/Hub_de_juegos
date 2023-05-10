@@ -56,3 +56,40 @@
     height: 100%;
     object-fit: contain;
 }
+@media screen and ( max-width: 730px){
+    .cuadro{
+        width: 150px;
+        height: 150px;
+    }
+    .cuadroLleno{
+        width: 150px;
+        height: 150px;
+    }
+    .rayaDiv2{
+        min-height: 50vh;
+    }
+}
+@media screen and ( max-width: 600px){
+    .cuadro{
+        width: 100px;
+        height: 100px;
+    }
+    .cuadroLleno{
+        width: 100px;
+        height: 100px;
+    }
+    .rayaDiv2{
+        min-height: 30vh;
+    }
+}
+@media screen and ( max-width: 600px){
+    .cuadro{
+        width: 80px;
+        height: 80px;
+    }
+    .cuadroLleno{
+        width: 80px;
+        height: 80px;
+    }
+    
+}

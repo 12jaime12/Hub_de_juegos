@@ -3,7 +3,7 @@ export const partida = (array) => {
     let p = document.createElement("p");
     p.setAttribute("class", "hangmanP");
     p.setAttribute("id", `${element}`);
-    const section = document.querySelector("#palabra");
-    section.appendChild(p);
+    const div = document.querySelector(".guiones");
+    div.appendChild(p);
   });
 };

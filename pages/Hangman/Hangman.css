@@ -68,3 +68,20 @@
     background-color: black;
     color: white;
 }
+.guiones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and ( max-width: 500px){
+    #palabra{
+        flex-direction: column;
+    }
+    #submit{
+        flex-direction: column;
+    }
+    #hangmanDiv2{
+        min-width: 80vw;
+    }
+}

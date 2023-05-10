@@ -5,7 +5,7 @@ import { printTemplate as Login } from "../pages/Login/Login";
 import { printTemplate as Memory } from "../pages/Memory/Memory";
 import { printTemplate as Pokemon } from "../pages/Pokemon/Pokemon";
 import { printTemplate as Quiz } from "../pages/Quiz/Quiz";
-import { printTemplate as Topo } from "../pages/topo/Topo";
+import { printTemplate as Topo } from "../pages/Topo/Topo";
 
 export const MainControler = (route) => {
   switch (route) {
