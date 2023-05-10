@@ -21,9 +21,9 @@ main{
 .figureDashboard{
     width: 300px;
     height: 300px;
-    margin: 6rem;
-    
+    margin: 3rem 0; 
 }
+
 .figureDashboard img{
     width: 100%;
     height: auto;
