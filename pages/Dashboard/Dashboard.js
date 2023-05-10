@@ -7,7 +7,7 @@ const template = () => `
         <li>
             <figure id="raya" class="figureDashboard">
             <img
-                src="https://res.cloudinary.com/dtyjzv2xg/image/upload/v1683032968/3raya_b15kyo.png"
+                src="https://res.cloudinary.com/dtyjzv2xg/image/upload/v1683729321/3enRayaR_j0suno.png"
                 alt="3Raya"
                 id="3Raya"
             />
