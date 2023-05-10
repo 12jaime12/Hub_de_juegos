@@ -47,22 +47,46 @@
     background-size: contain;
     content: "";
     width: 100%;
-    height: 100px;
+    height: 200px;
     position: absolute;
     z-index: 2;
-    bottom: -40px;
+    bottom: -70px;
 }
 
 .mole {
     background: url("https://res.cloudinary.com/dtyjzv2xg/image/upload/v1683624663/topo_hwmbxd.png") bottom center no-repeat;
-    background-size: 100%;
+    background-size: 60%;
     position: absolute;
     top: 100%;
     width: 100%;
     height: 100%;
     transition: all 0.4s;
+    z-index: 4;
 }
 
 .hole.up .mole{
     top: 0;
+}
+@media screen and ( max-width: 800px){
+    .mole{
+        background-size: 80%;
+    }
+}
+@media screen and ( max-width: 650px){
+    .hole:after{
+        bottom: -40px;
+    }
+}
+@media screen and ( max-width: 550px){
+    .hole:after{
+        bottom: -30px;
+        height: 100px;
+    }
+    .hole{
+        height: 100px;
+    }
+    .game {
+        margin-top: 3rem;
+        height: 30vh;
+    }
 }
