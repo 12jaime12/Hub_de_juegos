@@ -3,11 +3,13 @@ import { MainControler } from "../route";
 
 let i = 0;
 export const HangmanComprobar = (e, palabra) => {
-  if (palabra[1].includes(e.ToLowerCase())) {
+  const minus = e.toLowerCase();
+  const mayus = e.toUpperCase();
+  if (palabra[1].includes(minus)) {
     palabra[0].forEach((element) => {
-      if (e.ToLowerCase() === element) {
-        const p = document.getElementById(`${e}`);
-        p.innerHTML = e.toUpperCase();
+      if (minus === element) {
+        const p = document.getElementById(`${minus}`);
+        p.innerHTML = mayus;
         p.setAttribute("id", "hola");
         p.setAttribute("class", "hangmanPacertado");
         const input = document.querySelector("#hangmanInput");
