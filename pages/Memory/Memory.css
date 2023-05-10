@@ -95,3 +95,54 @@
 .rotadaBack{
     transform: rotateY(360deg);
 }
+@media screen and ( max-width: 1000px){
+    .memoryLi{
+        width: 150px;
+        height: 150px;
+    }
+    .memoryLiRotate{
+        width: 150px;
+        height: 150px;
+    }
+    .acertados{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media screen and ( max-width: 800px){
+    .memoryLi{
+        width: 100px;
+        height: 100px;
+    }
+    .memoryLiRotate{
+        width: 100px;
+        height: 100px;
+    }
+    .acertados{
+        width: 100px;
+        height: 100px;
+    }
+    .memoryUl{
+        margin: 0.5rem;
+    }
+}
+@media screen and ( max-width: 500px){
+    .memoryLi{
+        width: 70px;
+        height: 70px;
+    }
+    .memoryLiRotate{
+        width: 70px;
+        height: 70px;
+    }
+    .acertados{
+        width: 70px;
+        height: 70px;
+    }
+    .memoryUl{
+        gap: 0.5rem;
+    }
+    .memoryDiv2{
+        min-height: 50vh;
+    }
+}
