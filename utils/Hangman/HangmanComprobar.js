@@ -3,7 +3,7 @@ import { MainControler } from "../route";
 
 let i = 0;
 export const HangmanComprobar = (e, palabra) => {
-  if (palabra[1].includes(e)) {
+  if (palabra[1].includes(e.ToLowerCase())) {
     palabra[0].forEach((element) => {
       if (e.ToLowerCase() === element) {
         const p = document.getElementById(`${e}`);
