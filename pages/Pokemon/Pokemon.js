@@ -15,6 +15,7 @@ const template = () => `
   <div class="pokemonTipos"></div>
   <div class="pokemonSelect"></div>
   <div class="pokemonGallery"></div>
+  <div class="spinner"></div>
 </div>
 `;
 
