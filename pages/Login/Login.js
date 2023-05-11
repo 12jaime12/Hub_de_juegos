@@ -5,7 +5,7 @@ import "./Login.css";
 
 const template = () => `
 <div class="divLogin">
-  <input id="inputLogin" type="text" placeholder="Nombre"/>
+  <input id="inputLogin" type="text" placeholder="Nombre" maxlength="10"/>
   <button id="buttonLogin">Login</button>
 </div>
 `;
