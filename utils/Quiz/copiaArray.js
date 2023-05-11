@@ -2,6 +2,7 @@ import {
   preguntasCapitales,
   preguntasFormula1,
   preguntasFutbol,
+  preguntasProgramacion,
 } from "../../data/quiz.data";
 import { pintarPregunta } from "./PintarPregunta";
 
@@ -15,6 +16,9 @@ export const copiaArray = (palabra) => {
     pintarPregunta(array);
   } else if (palabra === "futbol") {
     array = [...preguntasFutbol];
+    pintarPregunta(array);
+  } else if (palabra === "programacion") {
+    array = [...preguntasProgramacion];
     pintarPregunta(array);
   }
 };

@@ -215,3 +215,66 @@ export const preguntasFutbol = [
     acierto: "Messi",
   },
 ];
+export const preguntasProgramacion = [
+  {
+    pregunta: "¿como se comprueba el tipo de una variable?",
+    respuestas: ["typeof()", "typeof", "typeOf", "typeOf()"],
+    acierto: "typeof",
+  },
+  {
+    pregunta: "¿Como se sabe la longitud de un array o string?",
+    respuestas: ["lenght", "Lenght", "lenght()", "Lenght()"],
+    acierto: "lenght",
+  },
+  {
+    pregunta:
+      "¿Como saber si un caracter o una cadena de caracteres se encuentra en un string?",
+    respuestas: ["Includes()", ".includes", "includes()", ".Includes"],
+    acierto: "includes()",
+  },
+  {
+    pregunta: "¿Como se convierte una cadena de caracteres a minúsculas?",
+    respuestas: [
+      "ToLowerCase()",
+      ".toLowerCase",
+      ".ToLowerCase",
+      "toLowerCase()",
+    ],
+    acierto: "toLowerCase()",
+  },
+  {
+    pregunta: "¿Cual de los siguientes lenguajes es un lenguaje no tipado?",
+    respuestas: ["TypeScript", "Java", "JavaScript", "C++"],
+    acierto: "JavaScript",
+  },
+  {
+    pregunta: "¿Operador para saber el resto de un numero?",
+    respuestas: ["&", "$", "%", "|"],
+    acierto: "%",
+  },
+  {
+    pregunta: "¿como se convierte un numero a entero?",
+    respuestas: ["parseInt()", ".parseInt", ".ParseInt", "ParseInt()"],
+    acierto: "parseInt()",
+  },
+  {
+    pregunta: "¿cual no es un tipo de bucles?",
+    respuestas: ["forOf", "forEach", "while", "Todas son bucles"],
+    acierto: "Todas son bucles",
+  },
+  {
+    pregunta: "¿Que tarea realiza el metodo pop()?",
+    respuestas: [
+      "Borra el primer elemento de un array",
+      "Borra el ultimo elemento de un array",
+      "Borra todo el array",
+      "Borra el elemento cuyo indice pasemos como parametro",
+    ],
+    acierto: "Borra el ultimo elemento de un array",
+  },
+  {
+    pregunta: "¿Como se ordena un array de manera alfabetica?",
+    respuestas: ["sort()", "Sort()", ".sort", ".sort()"],
+    acierto: "sort()",
+  },
+];

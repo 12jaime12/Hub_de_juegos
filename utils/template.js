@@ -1,5 +1,6 @@
 import { printTemplate as Header } from "../components/Header/Header";
 import { printTemplate as Footer } from "../components/Footer/Footer";
+import { MainControler } from "./route";
 
 export const initTemplate = () => {
   const app = document.querySelector("#app");
@@ -9,6 +10,6 @@ export const initTemplate = () => {
 
   app.append(header, main, footer);
   Header();
-  initTemplate();
+  MainControler();
   Footer();
 };

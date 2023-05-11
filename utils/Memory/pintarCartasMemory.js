@@ -33,7 +33,6 @@ const addListeners = (li, img1, img2) => {
     const liRotates = document.querySelectorAll(".memoryLiRotate");
     const rotateBack = document.querySelectorAll(".rotateBack");
     const rotateFront = document.querySelectorAll(".rotateFront");
-    console.log(liRotates);
     setTimeout(() => {
       if (liRotates[1]) {
         if (liRotates.length <= 2 && liRotates[0].id === liRotates[1].id) {

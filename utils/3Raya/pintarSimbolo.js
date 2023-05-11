@@ -4,7 +4,6 @@ import { comprobarVictoria } from "./comprobarVictoria";
 import { resultadoFinal } from "./resultadoFinal";
 
 export const pintarSimbolo = (e) => {
-  console.log(e.target.id);
   const cuadro = document.getElementById(e.target.id);
   const img = document.createElement("img");
   img.setAttribute(
@@ -25,7 +24,6 @@ export const pintarSimbolo = (e) => {
     setTimeout(() => {
       const vacios = document.querySelectorAll(".cuadro");
       if (vacios.length !== 0) {
-        console.log(vacios);
         const cuadroO = vacios[numberRandom(vacios)];
         const img = document.createElement("img");
         img.setAttribute(

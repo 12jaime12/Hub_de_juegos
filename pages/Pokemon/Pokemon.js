@@ -25,7 +25,6 @@ const addListeners = () => {
     filterPokemon(e.target.value);
   });
   const buttonGallery = document.querySelector("#galleryButton");
-  console.log(buttonGallery);
   buttonGallery.addEventListener("click", () => {
     montarCarta(pokemonDataGlobal);
   });
