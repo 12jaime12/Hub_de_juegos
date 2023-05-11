@@ -1,6 +1,5 @@
 import { printTemplate as Header } from "../components/Header/Header";
 import { printTemplate as Footer } from "../components/Footer/Footer";
-import { printDashboard } from "../pages/Dashboard/Dashboard";
 
 export const initTemplate = () => {
   const app = document.querySelector("#app");
@@ -10,6 +9,6 @@ export const initTemplate = () => {
 
   app.append(header, main, footer);
   Header();
-  printDashboard();
+  initTemplate();
   Footer();
 };
