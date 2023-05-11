@@ -28,3 +28,11 @@ header ul{
     margin-right: 3rem;
     list-style-type: none;
 }
+ @media screen and ( max-width: 550px){
+    header{
+        position: fixed;
+    }
+    main{
+        padding-top: 10vh;
+    }
+}  
