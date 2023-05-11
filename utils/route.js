@@ -13,28 +13,28 @@ export const MainControler = (route) => {
       localStorage.getItem("user") ? printDashboard() : Login();
       break;
     case "Raya":
-      Raya();
+      localStorage.getItem("user") ? Raya() : Login();
       break;
     case "Topo":
-      Topo();
+      localStorage.getItem("user") ? Topo() : Login();
       break;
     case "Memory":
-      Memory();
+      localStorage.getItem("user") ? Memory() : Login();
       break;
     case "Hangman":
-      Hangman();
+      localStorage.getItem("user") ? Hangman() : Login();
       break;
     case "Pokemon":
-      Pokemon();
+      localStorage.getItem("user") ? Pokemon() : Login();
       break;
     case "Quiz":
-      Quiz();
+      localStorage.getItem("user") ? Quiz() : Login();
       break;
     case "Login":
       Login();
       break;
     case "Dashboard":
-      printDashboard();
+      localStorage.getItem("user") ? printDashboard() : Login();
       break;
   }
 };

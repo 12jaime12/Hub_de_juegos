@@ -20,7 +20,7 @@ export const playTopo = () => {
       const confeti = new JSConfetti();
       confeti.addConfetti();
     } else {
-      h1.innerHTML = `Intentelo de nuevohas conseguido una puntuacion de ${actualScore} puntos`;
+      h1.innerHTML = `Intentelo de nuevo has conseguido una puntuacion de ${actualScore} puntos`;
       const confeti = new JSConfetti();
       confeti.addConfetti({
         emojis: ["😭"],
