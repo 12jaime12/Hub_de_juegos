@@ -8,6 +8,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .DashboardContainer ul{
     width: 100vw;
@@ -17,6 +18,18 @@ main{
     align-items: center;
     list-style: none;
     padding-top: 10vh;
+}
+.saludos{
+    background: rgb(158,212,252);
+    background: linear-gradient(90deg, rgba(158,212,252,1) 0%, rgba(207,130,247,1) 25%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: none;
+    margin: 1rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .figureDashboard{
     width: 300px;

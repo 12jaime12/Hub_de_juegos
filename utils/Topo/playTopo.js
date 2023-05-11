@@ -8,6 +8,7 @@ export const playTopo = () => {
   showTopo(timeUp);
   const button = document.querySelector("#startGame");
   button.innerHTML = "";
+  button.style.display = "none";
 
   setTimeout(() => {
     const actualScore = getScore();

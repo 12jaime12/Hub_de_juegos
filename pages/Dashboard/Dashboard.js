@@ -1,8 +1,10 @@
+import { getName } from "../../utils/DashboardName";
 import { MainControler } from "../../utils/route";
 import "./Dashboard.css";
 
 const template = () => `
   <div class="DashboardContainer">
+    <h1 class="saludos"></h1>
     <ul>
         <li>
             <figure id="raya" class="figureDashboard">
@@ -92,4 +94,5 @@ const addListener = () => {
 export const printDashboard = () => {
   document.querySelector("main").innerHTML = template();
   addListener();
+  getName();
 };

@@ -18,6 +18,12 @@
     justify-content: center;
     align-items: center;
 }
+#startGame{
+    background-color: transparent;
+    border: 3px solid black;
+    padding: 1rem 4rem;
+    margin-top: 0.5rem;
+}
 .game {
     width: 60vw;
     height: 50vh;
