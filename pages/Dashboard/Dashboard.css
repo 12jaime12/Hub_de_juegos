@@ -71,10 +71,10 @@ main{
 }
 
 .figureDashboard img:hover{
-    -webkit-box-shadow: 0px 0px 22px 10px rgba(227,132,252,1);
--moz-box-shadow: 0px 0px 22px 10px rgba(227,132,252,1);
-box-shadow: 0px 0px 22px 10px rgba(227,132,252,1);
-
+    -webkit-box-shadow: 0px 0px 22px 10px white;
+-moz-box-shadow: 0px 0px 22px 10px white;
+box-shadow: 0px 0px 22px 10px white;
+/* rgba(227,132,252,1) */
 }
 @media screen and ( max-width: 550px){
     .DashboardContainer ul{
