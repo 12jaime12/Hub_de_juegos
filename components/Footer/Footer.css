@@ -10,7 +10,7 @@ footer{
     text-align: center;
     border-top: solid 3px rgb(158,212,252);
 }
-footer h1{
+footer h2{
     background: rgb(158,212,252);
     background: linear-gradient(90deg, rgba(158,212,252,1) 0%, rgba(207,130,247,1) 25%);
     -webkit-text-fill-color: transparent;
