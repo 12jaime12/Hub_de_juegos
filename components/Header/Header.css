@@ -1,8 +1,10 @@
 header{
-    background-image: url(https://res.cloudinary.com/dtyjzv2xg/image/upload/v1682974644/istockphoto-1126182474-612x612_wa88lu.jpg);
+    /* background-image: url(https://res.cloudinary.com/dtyjzv2xg/image/upload/v1682974644/istockphoto-1126182474-612x612_wa88lu.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
+    background-color: black;
+    border-bottom: white solid 1px;
     max-height: 15vh;
     width: 100vw;
     display: flex;
