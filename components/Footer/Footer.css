@@ -3,14 +3,13 @@ footer{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; */
-    background-color: black;
-    border-bottom: white solid 1px;
+    background-color: #161616;
+    border-top: white solid 1px;
     min-height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-top: solid 3px rgb(158,212,252);
 }
 footer h2{
     /* background: rgb(158,212,252);
