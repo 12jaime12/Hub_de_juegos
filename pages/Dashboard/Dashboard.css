@@ -10,15 +10,43 @@ main{
     align-items: center;
     flex-direction: column;
 }
-.DashboardContainer ul{
+/* .DashboardContainer ul{
     width: 100vw;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    padding-top: 10vh;
+    flex-direction: column;
+    padding-top: 1vh; 
+} */
+.conteun{
+    width: 400px;
+}
+.DashboardContainer ul{
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+.DashboardContainer ul::-webkit-scrollbar{
+ display: none;
+}
+.card{
     
+    scroll-snap-align: start;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.gameName{
+    font-size: 30px;
+    text-shadow: 3px 3px white ;
 }
 .saludos{
     background: rgb(158,212,252);
@@ -35,17 +63,16 @@ main{
 .figureDashboard{
     width: 300px;
     height: 300px;
-    margin: 6rem; 
+    margin: 3rem;
 }
-
 .figureDashboard img{
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 10%;
     -webkit-box-shadow: 0px 0px 22px 10px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 22px 10px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 22px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 22px 10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 22px 10px rgba(0,0,0,0.75);
 }
 
 .figureDashboard img:hover{
@@ -55,10 +82,6 @@ box-shadow: 0px 0px 22px 10px rgba(227,132,252,1);
 
 }
 @media screen and ( max-width: 550px){
-    .figureDashboard{
-        
-        margin: 3rem 0; 
-    }
     .DashboardContainer ul{
         padding-top: 6vh;
     }
