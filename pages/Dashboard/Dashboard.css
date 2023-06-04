@@ -4,7 +4,7 @@ main{
 }
 .DashboardContainer{
     width: 100vw;
-    min-height: 80vh;
+    min-height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
